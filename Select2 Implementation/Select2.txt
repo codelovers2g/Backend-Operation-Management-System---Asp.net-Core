@@ -1,0 +1,9 @@
+//Select2 jquery tool for autocomplete, dropdown and other related items
+
+By using select2 autocomplete fetch data from database on the basis of input and display in the dropdown menu. Also when click to 
+select product from dropdown it will put user input in the search box and and display selected data as per need.
+
+
+//Use of select2 
+This POC is intended to illustrate Select2, a JQuery Plugin which is used as a replacement for select box with
+ support for searching, tagging, remote data sets, infinite scrolling and many other highly used options and contains event handling.

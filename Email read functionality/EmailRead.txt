@@ -1,0 +1,18 @@
+In Email read function
+1. First of all we have used ImapClient() to fetch email from mail account.
+2. Fetch only unread mails from gmail eg:
+  IList<UniqueId> uids = client.Inbox.Search(SearchQuery.NotSeen);
+
+3. getting all required things from every mail like From, To, Message body, text body, subject, created date etc
+4. Fetch details from database as per email data.
+
+
+Here we are using ImapClient() for that using library 
+using MailKit;
+using MailKit.Net.Imap;
+
+IMAP client for receiving emails, POP3 client for receiving emails, SMTP client for sending emails in a single package
+Email component includes most reliable MIME parser on the market
+
+IMAP component and POP3 component that allows to receive emails and process emails in .NET applications, in C# and VB.NET. 
+Includes SMTP component for sending emails, along with signing emails and encrypting emails.

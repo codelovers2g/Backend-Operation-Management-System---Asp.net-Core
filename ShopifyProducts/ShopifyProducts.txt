@@ -1,0 +1,9 @@
+1. Here we are trying to get Shopify products from shopify database 
+2. Get Specific data of products and store in own database for further use.
+3. Every time first we delete all product data that we stored in own database then fetch new records from shopify database and store in own database table.
+
+It all will be done by backend service.
+
+About Shopify:
+Shopify is a commerce platform that allows anyone to set up an online store and sell their products. 
+Merchants can also sell their products in person with Shopify POS.

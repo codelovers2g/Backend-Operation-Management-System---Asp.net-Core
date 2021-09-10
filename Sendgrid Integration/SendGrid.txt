@@ -1,0 +1,29 @@
+//Sendgrid Implementation:
+
+SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid
+manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist
+services and real time analytics.
+
+
+Send Email From Your Application
+
+SendGrid provides two ways to send email: through our SMTP relay or through our Web API. SendGrid provides client libraries
+in many languages. This is the preferred way to integrate with SendGrid. If you choose to use SendGrid without a client library,
+the Web API is recommended in most cases as it is faster, provides some beneft with encoding, and tends to be easier to
+use. SMTP provides many features by default, but is harder to setup.
+
+Web API
+• The Web API has some advantages over SMTP:
+• If your ISP blocks all outbound mail ports and your only option is HTTP.
+• If there is high latency between your site and ours, the Web API might be quicker since it does not require
+ as many messages between the client and server.
+• If you do not control the application environment and cannot install and confgure an SMTP library.
+• If you build a library to send email, developing against a web API provides quicker development.
+
+
+SMTP Relay
+• If you are integrating SendGrid with an existing application, setting up the application to use our SMTP relay
+ is easiest, as it only requires modifying SMTP confguration.
+• Change your SMTP username and password to your SendGrid credentials
+• Set the server host name to smtp.sendgrid.net
+• Use ports 25 or 587 for plain/TLS connections and port 465 for SSL connections
